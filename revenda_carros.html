@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-         let ModeloCarro , Preco , ValorEntrada , Saldo , parcelas
-
-         ModeloCarro = prompt("Digite o Modelo do seu veículo")
-         Preco = prompt("Digite o preço do veículo")
-        
-         Preco = number(preco)
-
-         ValorEntrada = preco * 0.5
-         saldo = preco % 0.5
-         parcelas = saldo/ 12
+<script>
+    
+    
+    let ModeloCarro, Preco, ValorEntrada, parcelas
 
 
+    ModeloCarro = prompt("Digite o Modelo do seu veículo")
+    Preco = parseFloat(prompt("Digite o preço do veículo"))
 
-         document.write(`O valor de entrada do veículo é R$ ${ValorEntrada}, o valor do saldo é R$ ${saldo} valor das parcelas de 12x é R$ ${parcelas}`)
+    // int --> 25354333333353 
+    //float --> 2,9049
 
 
+    ValorEntrada = preco * 0.50
+    parcelas = ValorEntrada / 12
+    
+    document.write(`O valor da entrada do veiculo é ${ValorEntrada}<br> e o resto do pagamento é de 12X R$ ${parcelas}`)
+    //document.write(`O valor de entrada do veículo é R$ ${ValorEntrada}, valor das parcelas de 12x é R$ ${parcelas}`) 
 
-
-
-    </script>
+</script>
 </body>
 </html>

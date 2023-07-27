@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /**Elaborar um programa para uma lan house de
+    um aeroporto – O programa deve ler o valor
+    de cada 15 minutos de uso de um computador
+    e o tempo de uso por um cliente em minutos.
+    informe o valor a ser pago pelo cliente,
+    sabendo que as frações extras de 15 minutos
+    devem ser cobradas de forma integral.**/
+
+    let valorMim, TempoCliente, PrecoFinal1 , PrecoFinal2
+
+    valorMim = Number(prompt("Digite o valor por 15 mim no computador:"))
+    TempoCliente = Number(prompt("digite os minutos de uso do computador:"))
+
+    PrecoFinal1 = TempoCliente / 15 
+    PrecoFinal2 = PrecoFinal1 * valorMim
+
+    document.write(`o Valor a ser pago é: ${PrecoFinal2}`)
+
+        
+    </script>
+</body>
+</html>
